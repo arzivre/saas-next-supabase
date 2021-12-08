@@ -4,9 +4,9 @@ import { useUser } from '../context/user'
 const Logout = () => {
   const { logout } = useUser()
 
-  useEffect(logout(), [])
+  useEffect(logout, [])
 
-  return <div>Loging out</div>
+  return <p>Logging out</p>
 }
 
 export default Logout

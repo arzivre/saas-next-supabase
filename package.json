@@ -20,6 +20,7 @@
   "devDependencies": {
     "autoprefixer": "^10.2.6",
     "postcss": "^8.3.5",
+    "stream": "^0.0.2",
     "tailwindcss": "^2.2.4"
   }
 }

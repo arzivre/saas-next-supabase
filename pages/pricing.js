@@ -1,6 +1,6 @@
 import initStripe from 'stripe'
-import useSWR from 'swr'
 import { loadStripe } from '@stripe/stripe-js'
+import NextLink from 'next/link'
 
 import { useUser } from '../context/user'
 
@@ -37,7 +37,9 @@ const Pricing = ({ plans }) => {
                 <button onClick={login}>Create Account</button>
               )}
               {showManageSubscriptionButton && (
-                <button>Manage Subscription</button>
+                <NextLink href='/dashboard'>
+                  <a>Manage Subscription</a>
+                </NextLink>
               )}
             </div>
           )}
